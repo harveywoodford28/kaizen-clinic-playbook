@@ -2188,81 +2188,96 @@ footer .dot {
   main {
     padding: 0 max(16px, env(safe-area-inset-right)) 0 max(16px, env(safe-area-inset-left));
   }
-  .site-header { padding: 20px 0; }
-  .logo { font-size: 16px; }
-  .header-right { font-size: 11px; }
+  .site-header { padding: 18px 0; }
+  .logo { font-size: 15px; }
+  .header-right { font-size: 10px; }
 
-  .hero { padding: 44px 0 64px; }
-  h1 { font-size: clamp(32px, 9vw, 44px); letter-spacing: -0.03em; }
-  .hero-sub { font-size: 16px; }
-  .hero-kicker { font-size: 13px; }
-  .hero-badge { font-size: 11px; padding: 7px 12px; }
+  .hero { padding: 32px 0 48px; }
+  h1 { font-size: clamp(30px, 8.5vw, 40px); letter-spacing: -0.03em; }
+  .hero-sub { font-size: 15px; }
+  .hero-kicker { font-size: 12px; }
+  .hero-badge { font-size: 10px; padding: 6px 11px; margin-bottom: 20px; }
 
-  .intro-strip { padding: 24px; margin-bottom: 72px; border-radius: 20px; }
-  .intro-strip p { font-size: 16px; }
-
-  .leak { margin-bottom: 88px; }
-  .leak-head { margin-bottom: 28px; gap: 14px; }
-  .leak-title-block h2 { font-size: 28px; line-height: 1.1; }
-  .leak-title-block .leak-label { font-size: 11px; }
+  .leak { margin-bottom: 64px; }
+  .leak-head { margin-bottom: 20px; gap: 12px; }
+  .leak-title-block h2 { font-size: 24px; line-height: 1.12; }
+  .leak-title-block .leak-label { font-size: 10px; }
+  .leak-tagline { font-size: 14px; margin-bottom: 24px; }
   .leak-body { gap: 24px; }
 
   .phone {
-    width: min(280px, 82vw);
+    width: min(260px, 78vw);
     height: auto;
-    aspect-ratio: 280 / 570;
-    max-height: 70vh;
+    aspect-ratio: 260 / 520;
+    max-height: 64vh;
   }
 
-  .copy-block { padding: 16px 18px; border-radius: 14px; }
-  .copy-block p { font-size: 14px; line-height: 1.5; }
-  .copy-block .lbl { font-size: 10px; }
+  .phones-wrap { gap: 24px; margin: 12px 0 20px; }
+  .phone-label { font-size: 9px; padding: 5px 11px; }
 
-  .stat-strip { padding: 20px; gap: 12px; margin-top: 24px; border-radius: 14px; }
-  .stat-num { font-size: 24px; }
-  .stat-lbl { font-size: 10px; }
+  .outcome-bar { padding: 14px 18px; gap: 12px; border-radius: 12px; }
+  .outcome-text { font-size: 13px; line-height: 1.45; }
+  .outcome-icon { font-size: 18px; }
+
+  .customisable-note { font-size: 12px; padding: 12px 14px; margin-top: 14px; line-height: 1.5; }
+
+  .custom-options { padding: 18px; border-radius: 14px; margin-top: 16px; }
+  .custom-title { font-size: 11px; margin-bottom: 12px; }
+  .option-item { padding: 10px 12px; font-size: 12px; border-radius: 8px; gap: 8px; }
 
   .grace-callout {
-    margin-top: 24px;
-    padding: 22px;
-    border-radius: 18px;
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 14px;
   }
   .grace-callout::before {
     position: static;
     display: inline-block;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     font-size: 9px;
   }
-  .grace-callout h3 { padding-right: 0; font-size: 17px; line-height: 1.25; }
-  .grace-callout p { font-size: 13px; }
+  .grace-callout h3 { padding-right: 0; font-size: 15px; line-height: 1.25; margin-bottom: 10px; }
+  .grace-callout p { font-size: 13px; line-height: 1.5; }
 
-  .divider { margin: 56px auto; }
+  .search-showcase { padding: 20px; margin-top: 20px; border-radius: 14px; }
+  .showcase-hdr { font-size: 14px; margin-bottom: 4px; }
+  .showcase-sub { font-size: 12px; margin-bottom: 16px; }
+  .showcase-grid { gap: 12px; }
+  .showcase-card { padding: 14px 16px; border-radius: 12px; }
+  .showcase-card .src-tag { font-size: 10px; margin-bottom: 8px; }
+  .showcase-card h4 { font-size: 14px; }
+  .showcase-card .sc-text { font-size: 12px; line-height: 1.5; }
+  .showcase-card .sc-stars { font-size: 12px; margin-bottom: 6px; }
 
-  .tech-section, .pricing-section, .proof-section, .cta-section { margin-bottom: 80px; }
-  .section-head { margin-bottom: 32px; }
-  .section-head h2 { font-size: 26px; }
-  .section-kicker { font-size: 11px; }
+  .divider { margin: 44px auto; }
 
-  .tech-card { padding: 16px 18px; border-radius: 12px; }
-  .tech-card .name { font-size: 14px; }
-  .tech-card .role { font-size: 11px; }
+  .tech-section, .cta-section, .crm-section { margin-bottom: 64px; }
+  .section-head { margin-bottom: 24px; }
+  .section-head h2 { font-size: 22px; }
+  .section-kicker { font-size: 10px; }
 
-  .price-card { padding: 26px 22px; border-radius: 18px; }
-  .price-val { font-size: 28px; }
-  .price-note { font-size: 12px; }
+  .crm-mockup { padding: 18px; border-radius: 16px; margin-top: 28px; }
+  .crm-header { padding-bottom: 14px; margin-bottom: 16px; }
+  .crm-title { font-size: 14px; }
+  .crm-stats { gap: 8px; margin-bottom: 20px; }
+  .crm-stat { padding: 14px 10px; }
+  .crm-stat .num { font-size: 24px; }
+  .crm-stat .lbl { font-size: 9px; }
+  .crm-feed-title { font-size: 10px; margin-bottom: 10px; }
+  .activity-row { padding: 12px; gap: 10px; }
+  .activity-icon { width: 30px; height: 30px; font-size: 13px; }
+  .activity-title { font-size: 12px; }
+  .activity-meta { font-size: 10px; }
+  .activity-value { font-size: 11px; padding: 3px 8px; }
 
-  .proof-card { padding: 22px; border-radius: 18px; }
-  .proof-card .headline { font-size: 18px; }
-  .proof-card .detail { font-size: 13px; }
-
-  .cta-card { padding: 40px 22px; border-radius: 20px; }
-  .cta-card h2 { font-size: 24px; }
-  .cta-card p { font-size: 14px; margin-bottom: 24px; }
-  .cta-btn { padding: 14px 24px; font-size: 14px; }
+  .cta-card { padding: 32px 20px; border-radius: 18px; }
+  .cta-card h2 { font-size: 22px; }
+  .cta-card p { font-size: 14px; margin-bottom: 22px; line-height: 1.5; }
+  .cta-btn { padding: 13px 22px; font-size: 14px; }
 
   footer {
-    padding: 32px 0 calc(40px + env(safe-area-inset-bottom));
-    font-size: 12px;
+    padding: 28px 0 calc(32px + env(safe-area-inset-bottom));
+    font-size: 11px;
   }
 }
 
@@ -2488,22 +2503,14 @@ footer .dot {
     <div class="custom-options">
       <div class="custom-title">⚙ Fully customisable — you pick, we build</div>
       <div class="options-grid">
-        <div class="option-item"><span><strong>Flow</strong> — any conversation structure the clinic wants</span></div>
-        <div class="option-item"><span><strong>Questions</strong> — every qualifying or screening Q they need answered</span></div>
-        <div class="option-item"><span><strong>Tone of voice</strong> — formal, casual, warm, clinical, playful</span></div>
-        <div class="option-item"><span><strong>Emojis</strong> — included or switched off entirely</span></div>
-        <div class="option-item"><span><strong>Humour</strong> — can step in at the right moments, or stay off</span></div>
-        <div class="option-item"><span><strong>System connections</strong> — Pabau, Fresha, Phorest, MindBody, anything</span></div>
-        <div class="option-item"><span><strong>Takes bookings</strong> — or doesn't, depending what you want</span></div>
-        <div class="option-item"><span><strong>Takes payments</strong> — deposits, full pay, or no money at all</span></div>
-        <div class="option-item"><span><strong>Owner notifications</strong> — ping the owner when an enquiry lands or a booking is made</span></div>
-        <div class="option-item"><span><strong>Handover rules</strong> — bot routes specific questions straight to a human</span></div>
-        <div class="option-item"><span><strong>Knowledge base</strong> — pricing, treatments, FAQs all pulled from what the clinic supplies</span></div>
-        <div class="option-item"><span><strong>Multi-channel</strong> — same bot on Instagram, Facebook, WhatsApp, website chat</span></div>
-        <div class="option-item"><span><strong>Owner takeover</strong> — step into any conversation, pause the bot, or take the chat over entirely whenever you want</span></div>
-      </div>
-      <div class="customisable-note" style="margin-top: 18px">
-        Nothing on this list is fixed — these are starting points. If a clinic wants something specific, we build it. <strong>The bot becomes an extension of the clinic, not a generic tool.</strong>
+        <div class="option-item"><span><strong>Flow + questions</strong> — any conversation structure, any qualifying questions the clinic wants</span></div>
+        <div class="option-item"><span><strong>Tone</strong> — formal, casual, warm, playful. Emojis on or off. Humour in or out</span></div>
+        <div class="option-item"><span><strong>System connections</strong> — plugs into Pabau, Fresha, Phorest, MindBody, or whatever you use</span></div>
+        <div class="option-item"><span><strong>Bookings + payments</strong> — takes bookings, collects deposits, or neither — your call</span></div>
+        <div class="option-item"><span><strong>Knowledge base</strong> — pricing, treatments, FAQs all pulled from what you supply</span></div>
+        <div class="option-item"><span><strong>Multi-channel</strong> — one bot across Instagram, Facebook, WhatsApp, and website chat</span></div>
+        <div class="option-item"><span><strong>Owner notifications</strong> — ping you the moment an enquiry or booking lands</span></div>
+        <div class="option-item"><span><strong>Owner takeover</strong> — step in mid-chat, pause the bot, or take over entirely any time</span></div>
       </div>
     </div>
 
