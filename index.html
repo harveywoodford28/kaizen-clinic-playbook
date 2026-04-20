@@ -2206,10 +2206,9 @@ footer .dot {
   .leak-body { gap: 24px; }
 
   .phone {
-    width: min(260px, 78vw);
-    height: auto;
-    aspect-ratio: 260 / 520;
-    max-height: 64vh;
+    width: 260px;
+    height: 520px;
+    max-width: 82vw;
   }
 
   .phones-wrap { gap: 24px; margin: 12px 0 20px; }
@@ -2295,6 +2294,27 @@ footer .dot {
 @media (hover: none) and (pointer: coarse) {
   .cta-btn { min-height: 48px; }
   a { min-height: 44px; }
+}
+
+/* Pause reveal animations until parent section scrolls into view.
+   Without this, animation-delay ticks from page load, so by the time a user
+   scrolls to Leak 03+ all bubbles have already "animated" and appear instantly. */
+.scroll-reveal:not(.visible) .bubble,
+.scroll-reveal:not(.visible) .transcript-line,
+.scroll-reveal:not(.visible) .time-gap,
+.scroll-reveal:not(.visible) .activity-row,
+.scroll-reveal:not(.visible) .call-end-chip,
+.scroll-reveal:not(.visible) .review-card,
+.scroll-reveal:not(.visible) .recovery-sms,
+.scroll-reveal:not(.visible) .reply-bubble,
+.scroll-reveal:not(.visible) .lost-stamp,
+.scroll-reveal:not(.visible) .missed-banner,
+.scroll-reveal:not(.visible) .auto-sms-box,
+.scroll-reveal:not(.visible) .confirmed-chip,
+.scroll-reveal:not(.visible) .reschedule-card,
+.scroll-reveal:not(.visible) .search-result-card,
+.scroll-reveal:not(.visible) .showcase-card {
+  animation-play-state: paused;
 }
 
 /* Reduce motion preference */
